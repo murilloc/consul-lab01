@@ -4,7 +4,9 @@ services:
   consul_server_01:
     image: consul:1.15.4
     container_name: consul_server_01
-    hostname: cs01    
+    hostname: cs01
+    ports:
+      - 8500:8500        
     command: ['tail', '-f', '/dev/null']
     volumes:
       - ./servers/server01:/etc/consul.d

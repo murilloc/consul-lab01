@@ -4,5 +4,10 @@
     "bootstrap_expect": 3,
     "data_dir": "/tmp",    
     "node_name": "consul_server_01",
-    "encrypt": "nH65Za+jLzeM3kROFBaZjwn7wTYB2+I5DBBQjNXImBQ="
+    "retry_join": ["172.20.0.4"],
+    "encrypt": "nH65Za+jLzeM3kROFBaZjwn7wTYB2+I5DBBQjNXImBQ=",
+    "client_addr": "0.0.0.0",
+    "ui_config": {
+        "enabled": true
+    }
 }
